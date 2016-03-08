@@ -1,0 +1,1 @@
+teamThumbnail.jsx
