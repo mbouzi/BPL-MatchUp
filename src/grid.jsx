@@ -126,7 +126,7 @@ module.exports = React.createClass({
 			team.key = key;
 
 			teamGrid.push(
-				<Thumbnail
+				<TeamThumbnail
 					className = {"thumbnail" + (this.state.matched.includes(team) ? " matched" : "") + (this.state.team == team ? " chosen" : "")}
 					whenTeamItemClicked={this.handleTeamClick}
 					team={team}

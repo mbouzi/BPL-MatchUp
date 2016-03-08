@@ -4,7 +4,7 @@ var React = require('react')
 module.exports = React.createClass({
 
 	handleClick: function(){
-		this.props.whenItemClicked(this.props.team);
+		this.props.whenTeamItemClicked(this.props.team);
 	},
 
 
