@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var Grid = require('./grid.jsx')
 
 var options = {
 	
@@ -88,5 +89,5 @@ var options = {
 	]
 }
 
-var element = React.createElement(Hello, {});
+var element = React.createElement(Grid, options);
 ReactDOM.render(element, document.querySelector('.container'));
