@@ -90,4 +90,4 @@ var options = {
 }
 
 var element = React.createElement(Grid, options);
-ReactDOM.render(element, document.querySelector('.container'));
+ReactDOM.render(element, document.querySelector('.grid'));
