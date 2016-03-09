@@ -169,11 +169,14 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60223b', endColorstr='#529ac6', GradientType=1 );
 }
 
-.color-thumb {
+.thumb {
 	height: 106.5px;
 	width: 106.5px;
 	margin: 5px;
 	margin-bottom: 16px;
+}
+
+.thumb img {
 }
 
 .chosen {

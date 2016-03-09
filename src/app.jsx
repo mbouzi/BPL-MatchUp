@@ -7,83 +7,83 @@ var options = {
 	teams: [
 		{
 			name: 'AFC Bournemouth',
-			crest: './imgs/600.png',
+			crest: './imgs/18.png',
 			color: 'AFCB',
 		},{
 			name: 'Arsenal',
-			crest: './imgs/602.png',
+			crest: './imgs/01.png',
 			color: 'ARS',
 		},{
 			name: 'Aston Villa',
-			crest: './imgs/603.png',
+			crest: './imgs/02.png',
 			color: 'AST',
 		},{
 			name: 'Chelsea',
-			crest: './imgs/630.png',
+			crest: './imgs/03.png',
 			color: 'CHE',
 		},{
 			name: 'Crystal Palace',
-			crest: './imgs/642.png',
+			crest: './imgs/15.png',
 			color: 'CPFC',
 		},{
 			name: 'Everton',
-			crest: './imgs/650.png',
+			crest: './imgs/04.png',
 			color: 'EVE',
 		},{
 			name: 'Leicester',
-			crest: './imgs/673.png',
+			crest: './imgs/12.png',
 			color: 'LEC',
 		},{
 			name: 'Liverpool',
-			crest: './imgs/676.png',
+			crest: './imgs/05.png',
 			color: 'LIV',
 		},{
 			name: 'Manchester City',
-			crest: './imgs/679.png',
+			crest: './imgs/06.png',
 			color: 'MCFC',
 		},{
 			name: 'Manchester United',
-			crest: './imgs/680.png',
+			crest: './imgs/07.png',
 			color: 'MUFC',
 		},{
 			name: 'Newcastle United',
-			crest: './imgs/688.png',
+			crest: './imgs/08.png',
 			color: 'NEW',
 		},{
 			name: 'Norwich City',
-			crest: './imgs/691.png',
+			crest: './imgs/19.png',
 			color: 'NOR',
 		},{
 			name: 'Southhampton',
-			crest: './imgs/713.png',
+			crest: './imgs/09.png',
 			color: 'SOU',
 		},{
 			name: 'Spurs',
-			crest: './imgs/728.png',
+			crest: './imgs/10.png',
 			color: 'TOT',
 		},{
 			name: 'Stoke City',
-			crest: './imgs/721.png',
+			crest: './imgs/17.png',
 			color: 'STK',
 		},{
 			name: 'Sunderland',
-			crest: './imgs/722.png',
+			crest: './imgs/13.png',
 			color: 'SUN',
 		},{
 			name: 'Swansea',
-			crest: './imgs/724.png',
+			crest: './imgs/16.png',
 			color: 'SWA',
 		},{
 			name: 'Watford',
-			crest: './imgs/730.png',
+			crest: './imgs/20.png',
 			color: 'WAT',
 		},{
 			name: 'West Brom',
-			crest: './imgs/734.png',
+			crest: './imgs/14.png',
 			color: 'WBM',
 		},{
 			name: 'West Ham',
-			crest: './imgs/735.png',
+			crest: './imgs/11.png',
 			color: 'WHM',
 		}
 	]

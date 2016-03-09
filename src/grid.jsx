@@ -84,10 +84,10 @@ module.exports = React.createClass({
 		return (
 			<div>
 				<div className="row">
-					<div className="team-grid col-lg-6">
+					<div className="team-grid col-xs-6">
 					  {this.renderTeamList()}
 					</div>
-					<div className="color-grid col-lg-6">
+					<div className="color-grid col-xs-6">
 					  {this.renderColorList()}
 					</div>
 				</div>
@@ -104,7 +104,7 @@ module.exports = React.createClass({
 
 			colorGrid.push(
 				<ColorThumbnail
-					className={teamColor.color + " color-thumb col-xs-3 col-md-3"+ (this.state.color == teamColor ? " chosen" : "") + (this.state.matched.includes(teamColor) ? " matched" : "")}
+					className={teamColor.color + " thumb col-xs-3"+ (this.state.color == teamColor ? " chosen" : "") + (this.state.matched.includes(teamColor) ? " matched" : "")}
 					color={teamColor.color}
 					team={teamColor}
 					whenColorItemClicked={this.handleColorClick}
@@ -127,7 +127,7 @@ module.exports = React.createClass({
 
 			teamGrid.push(
 				<TeamThumbnail
-					className = {"thumbnail" + (this.state.matched.includes(team) ? " matched" : "") + (this.state.team == team ? " chosen" : "")}
+					className = {"thumbnail thumb col-xs-3" + (this.state.matched.includes(team) ? " matched" : "") + (this.state.team == team ? " chosen" : "")}
 					whenTeamItemClicked={this.handleTeamClick}
 					team={team}
 					crest={team.crest}

@@ -149,7 +149,7 @@
   background: linear-gradient(45deg, #60223b 0%, #60223b 50%, #529ac6 51%, #529ac6 97%, #529ac6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60223b', endColorstr='#529ac6', GradientType=1 ); }
 
-.color-thumb {
+.thumb {
   height: 106.5px;
   width: 106.5px;
   margin: 5px;
