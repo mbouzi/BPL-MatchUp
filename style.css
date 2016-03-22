@@ -155,6 +155,35 @@
   margin: 5px;
   margin-bottom: 16px; }
 
+.card-container {
+  perspective: 800px;
+  position: relative;
+  height: 106.5px;
+  width: 106.5px;
+  margin: 5px;
+  margin-bottom: 16px; }
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s; }
+
+.card a {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+.card .back {
+  transform: rotateY(180deg); }
+
+.card .flipped {
+  transform: rotateY(180deg); }
+
 .chosen {
   box-shadow: 0 0 50px #ffd700,0 0 150px #ffd700 !important; }
 
@@ -163,3 +192,6 @@
 
 .center-block {
   text-align: center; }
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+  border-color: #0C0043 !important; }

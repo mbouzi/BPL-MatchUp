@@ -104,7 +104,7 @@ module.exports = React.createClass({
 
 			colorGrid.push(
 				<ColorThumbnail
-					className={teamColor.color + " thumb col-xs-3"+ (this.state.color == teamColor ? " chosen" : "") + (this.state.matched.includes(teamColor) ? " matched" : "")}
+					className={teamColor.color + " thumb thumbnail col-xs-3"+ (this.state.color == teamColor ? " chosen" : "") + (this.state.matched.includes(teamColor) ? " matched" : "")}
 					color={teamColor.color}
 					team={teamColor}
 					whenColorItemClicked={this.handleColorClick}
@@ -127,7 +127,7 @@ module.exports = React.createClass({
 
 			teamGrid.push(
 				<TeamThumbnail
-					className = {"thumbnail thumb col-xs-3" + (this.state.matched.includes(team) ? " matched" : "") + (this.state.team == team ? " chosen" : "")}
+					className = {"front thumbnail thumb thumb-team" + (this.state.matched.includes(team) ? " matched" : "") + (this.state.team == team ? " chosen" : "")}
 					whenTeamItemClicked={this.handleTeamClick}
 					team={team}
 					crest={team.crest}
