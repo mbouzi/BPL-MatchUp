@@ -9,6 +9,8 @@ var options = {
 			name: 'AFC Bournemouth',
 			crest: './imgs/18.png',
 			color: 'AFCB',
+			coach: 'Eddie Howe',
+			coachImg: './imgs/howe.jpg'
 		},{
 			name: 'Arsenal',
 			crest: './imgs/01.png',
