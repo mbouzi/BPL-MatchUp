@@ -1,6 +1,8 @@
 var React = require('react');
 var TeamThumbnail = require('./teamThumbnail.jsx');
 var ColorThumbnail = require('./colorThumbnail.jsx');
+var Updates = require('./updates.jsx');
+var Counter = require('./counter.jsx');
 
 module.exports = React.createClass({
 	
@@ -20,7 +22,10 @@ module.exports = React.createClass({
 			matched: [],
 			matchCount: 0,
 			team: null,
-			coach: null
+			coach: null,
+			coachName: null,
+			teamName: null
+			
 		};
 
 	},
@@ -29,12 +34,13 @@ module.exports = React.createClass({
 
 	handleTeamClick: function(team){
 		this.setState({
-			team: team
+			team: team,
+			teamName: team.name
 		},function(){
 			 console.log(this.state.matched)
 		})
-		console.log('team: ', this.state.team)
-		console.log('coach: ',this.state.coach)
+		console.log('team: ', this.state.teamName)
+		console.log('coach: ',this.state.coachName)
 		if (this.state.team === this.state.coach) {
 			this.state.matched.push(this.state.team)
 			this.forceUpdate();
@@ -52,10 +58,11 @@ module.exports = React.createClass({
 	},
 
 	handleCoachClick: function(teamCoach){
-		console.log('team: ', this.state.team)
-		console.log('coach ',this.state.coach)
+		console.log('team: ', this.state.teamName)
+		console.log('coach ',this.state.coachName)
 		this.setState({
-			coach: teamCoach
+			coach: teamCoach,
+			coachName: teamCoach.coach
 		},function(){
 			 console.log(this.state.matched)
 		})
@@ -83,6 +90,23 @@ module.exports = React.createClass({
 	render: function() {
 		return (
 			<div>
+				<div className="center-block row">
+					<div className="col-xs-3">
+						<Counter
+							
+						 />
+					</div>
+					<div className="col-xs-3">
+						<img src="imgs/logo.png"/>
+					</div>
+					
+					<Updates
+						team={this.state.teamName}
+						coach={this.state.coachName}
+					 />
+
+
+				</div>
 				<div className="row">
 					<div className="team-grid col-xs-6">
 					  {this.renderTeamList()}
@@ -94,6 +118,8 @@ module.exports = React.createClass({
 			</div>
 		)
 	},
+
+
 
 	renderCoachList: function(){
 		var coachGrid = [];

@@ -10,7 +10,7 @@ module.exports = React.createClass({
 
 	render: function(){
 		return (
-			<div className="card-container col-xs-3 col-lg-3" >
+			<div className="card-container col-xs-3" >
 				<div className="card">
 					<a 
 						onClick={this.handleClick} 
