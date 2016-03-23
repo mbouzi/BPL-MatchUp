@@ -1,66 +1,61 @@
-/* line 1, sass/style.scss */
+body {
+  background: #0C0043; }
+
+.center-block {
+  background: #EBFF00; }
+
+.center-block img {
+  border-radius: 30px;
+  background: #fff;
+  margin-bottom: 30px; }
+
 .thumb {
   height: 106.5px;
   width: 106.5px;
   margin: 5px;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
-/* line 11, sass/style.scss */
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+  background-color: #D6D4D4 !important;
+  border-color: #fff !important; }
+
 .card-container {
   perspective: 800px;
   position: relative;
   height: 106.5px;
   width: 106.5px;
   margin: 5px;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
-/* line 20, sass/style.scss */
 .card {
   width: 100%;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 1s;
-}
+  transition: transform 1s; }
 
-/* line 28, sass/style.scss */
 .card a {
   margin: 0;
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-}
+  backface-visibility: hidden; }
 
-/* line 37, sass/style.scss */
 .card .back {
-  transform: rotateY(180deg);
-}
+  transform: rotateY(180deg); }
 
-/* line 41, sass/style.scss */
-.card .flipped {
-  transform: rotateY(180deg);
-}
+.flipped {
+  transform: rotateY(180deg); }
 
-/* line 45, sass/style.scss */
 .chosen {
-  box-shadow: 0 0 50px #ffd700,0 0 150px #ffd700 !important;
-}
+  box-shadow: 0 0 50px #ffd700,0 0 150px #ffd700 !important; }
 
-/* line 49, sass/style.scss */
 .matched {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
-/* line 53, sass/style.scss */
 .center-block {
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 61, sass/style.scss */
 a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
-  border-color: #0C0043 !important;
-}
+  border-color: #0C0043 !important; }

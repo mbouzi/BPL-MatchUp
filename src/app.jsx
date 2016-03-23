@@ -106,7 +106,7 @@ var options = {
 			crest: './imgs/16.png',
 			color: 'SWA',
 			coach: 'Fancesco Guidolin',
-			coachImg: './imgs/howe.jpg'
+			coachImg: './imgs/guidolin.jpg'
 		},{
 			name: 'Watford',
 			crest: './imgs/20.png',
