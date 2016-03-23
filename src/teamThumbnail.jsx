@@ -13,7 +13,7 @@ module.exports = React.createClass({
 			<div className="card-container col-xs-3 col-lg-3" >
 				<div className="card">
 					<a 
-						onClick={this.handleClick} href="#" 
+						onClick={this.handleClick} 
 						className = {this.props.className}
 					>
 						<img 

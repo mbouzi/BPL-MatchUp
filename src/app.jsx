@@ -22,7 +22,7 @@ var options = {
 			crest: './imgs/02.png',
 			color: 'AST',
 			coach: 'Remi Garde',
-			coachImg: './imgs/howe.jpg'
+			coachImg: './imgs/garde.jpg'
 		},{
 			name: 'Chelsea',
 			crest: './imgs/03.png',
@@ -124,7 +124,7 @@ var options = {
 			crest: './imgs/11.png',
 			color: 'WHM',
 			coach: 'Slaven Bilic',
-			coachImg: './imgs/bilic.jpg'
+			coachImg: './imgs/bilic.jpeg'
 		}
 	]
 }
