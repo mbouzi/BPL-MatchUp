@@ -20,7 +20,7 @@ module.exports = React.createClass({
 			matched: [],
 			matchCount: 0,
 			team: null,
-			color: null
+			coach: null
 		};
 
 	},
@@ -34,8 +34,8 @@ module.exports = React.createClass({
 			 console.log(this.state.matched)
 		})
 		console.log('team: ', this.state.team)
-		console.log('color ',this.state.color)
-		if (this.state.team === this.state.color) {
+		console.log('coach: ',this.state.coach)
+		if (this.state.team === this.state.coach) {
 			this.state.matched.push(this.state.team)
 			this.forceUpdate();
 
@@ -51,18 +51,18 @@ module.exports = React.createClass({
 
 	},
 
-	handleColorClick: function(teamColor){
+	handleCoachClick: function(teamCoach){
 		console.log('team: ', this.state.team)
-		console.log('color ',this.state.color)
+		console.log('coach ',this.state.coach)
 		this.setState({
-			color: teamColor
+			coach: teamCoach
 		},function(){
 			 console.log(this.state.matched)
 		})
 
 		
-		if (this.state.team === this.state.color) {
-			this.state.matched.push(this.state.color)
+		if (this.state.team === this.state.coach) {
+			this.state.matched.push(this.state.coach)
 			this.forceUpdate();
 
 			console.log('match')
@@ -75,7 +75,7 @@ module.exports = React.createClass({
 		}
 	},
 
-	componentDidUpdate: function(team,teamColor){
+	componentDidUpdate: function(team,teamCoach){
 	
 
 	},
@@ -88,33 +88,33 @@ module.exports = React.createClass({
 					  {this.renderTeamList()}
 					</div>
 					<div className="color-grid col-xs-6">
-					  {this.renderColorList()}
+					  {this.renderCoachList()}
 					</div>
 				</div>
 			</div>
 		)
 	},
 
-	renderColorList: function(){
-		var colorGrid = [];
+	renderCoachList: function(){
+		var coachGrid = [];
 
 		for (var key in this.props.teams) {
-			var teamColor = this.props.teams[key];
-			teamColor.key = key;
+			var teamCoach = this.props.teams[key];
+			teamCoach.key = key;
 
-			colorGrid.push(
+			coachGrid.push(
 				<ColorThumbnail
-					className={teamColor.color + " thumb thumbnail col-xs-3"+ (this.state.color == teamColor ? " chosen" : "") + (this.state.matched.includes(teamColor) ? " matched" : "")}
-					color={teamColor.color}
-					team={teamColor}
-					whenColorItemClicked={this.handleColorClick}
-					key={teamColor.key}
+					className={"front thumb thumbnail col-xs-3"+ (this.state.color == teamCoach ? " chosen" : "") + (this.state.matched.includes(teamCoach) ? " matched" : "")}
+					coachImg={teamCoach.coachImg}
+					team={teamCoach}
+					whenCoachItemClicked={this.handleCoachClick}
+					key={teamCoach.key}
 				/>
 			)
 		}
 
 		
-		return colorGrid
+		return coachGrid
 	},
 
 	renderTeamList: function(){
@@ -127,7 +127,7 @@ module.exports = React.createClass({
 
 			teamGrid.push(
 				<TeamThumbnail
-					className = {"front thumbnail thumb thumb-team" + (this.state.matched.includes(team) ? " matched" : "") + (this.state.team == team ? " chosen" : "")}
+					className = {"front thumbnail thumb col-xs-3" + (this.state.matched.includes(team) ? " matched" : "") + (this.state.team == team ? " chosen" : "")}
 					whenTeamItemClicked={this.handleTeamClick}
 					team={team}
 					crest={team.crest}
