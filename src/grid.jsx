@@ -21,6 +21,7 @@ module.exports = React.createClass({
 			win: false,
 			matched: [],
 			matchCount: 0,
+			counterPercentage: 0,
 			team: null,
 			coach: null,
 			coachName: null,
@@ -43,7 +44,6 @@ module.exports = React.createClass({
 		console.log('coach: ',this.state.coachName)
 		if (this.state.team === this.state.coach) {
 			this.state.matched.push(this.state.team)
-			this.forceUpdate();
 
 			console.log('match')
 			console.log(this.state.matched)
@@ -70,8 +70,10 @@ module.exports = React.createClass({
 		
 		if (this.state.team === this.state.coach) {
 			this.state.matched.push(this.state.coach)
-			this.forceUpdate();
-
+			this.setState({
+				matchCount: this.state.matchCount + 1,
+				counterPercentage: this.state.counterPercentage + 10
+			})
 			console.log('match')
 		} else {
 			console.log('no-match')
@@ -93,7 +95,8 @@ module.exports = React.createClass({
 				<div className="center-block row">
 					<div className="col-xs-3">
 						<Counter
-							
+							matchCount = {this.state.matchCount}
+							counterPercentage = {this.state.counterPercentage}
 						 />
 					</div>
 					<div className="col-xs-3">
