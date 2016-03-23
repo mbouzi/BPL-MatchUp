@@ -3,7 +3,7 @@ body {
 }
 
 .center-block {
-	background: #EBFF00;
+  border-radius: 2%;
 }
 
 
@@ -12,6 +12,52 @@ body {
 	background: #fff;
 	margin-bottom: 30px;
 
+}
+
+.progress-bar {
+  background-color: #00FF87;
+}
+
+.label {
+    width: 10%;
+    margin: 0 auto;
+    padding: 7px;
+}
+
+.btn-primary {
+    background-color: #FF015B;
+    border-color: #FF015B;
+}
+
+.label-danger {
+    background-color: #FF015B;
+}
+
+.label-success {
+  background-color: #00FF87;
+}
+
+.logo {
+  background: url('./imgs/logo.png');
+  width: 100%;
+  height: 35%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
 }
 
 .thumb {
@@ -53,8 +99,17 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-   backface-visibility: hidden;
+  backface-visibility: hidden;
  
+}
+
+.progress {
+  height: 30px;
+}
+
+.btn {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .card .back {

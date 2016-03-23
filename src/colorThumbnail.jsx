@@ -11,7 +11,7 @@ module.exports = React.createClass({
 	render: function(){
 		return (
 			<div className="card-container col-xs-3" >
-				<div className="card">
+				<div className={this.props.toFlip}>
 					<a 
 						onClick={this.handleClick} 
 						className = {this.props.className}

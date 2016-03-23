@@ -4,7 +4,7 @@ module.exports = React.createClass({
 
 	render: function(){
 		return(
-			<div className="col-xs-3">
+			<div className="col-xs-4 header">
 				<div className="panel panel-info">
 					<div className="panel-heading">
 						<h3 className="panel-title">Team: {this.props.team}</h3>
@@ -15,6 +15,7 @@ module.exports = React.createClass({
 						<h3 className="panel-title">Coach: {this.props.coach}</h3>
 					</div>
 				</div>
+				<span className={this.props.className}>{this.props.labelTwo}</span>
 			</div>
 		)
 	}
