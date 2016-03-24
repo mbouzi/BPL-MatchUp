@@ -18,8 +18,10 @@ module.exports = React.createClass({
 			coach: null,
 			coachName: null,
 			teamName: null,
-			labelOne: 'danger',
-			labelTwo: 'X'
+			labelOne: 'warning',
+			labelTwo: 'X',
+			shuffTeams: _.shuffle(this.props.teams),
+			shuffCoaches: _.shuffle(this.props.teams)
 			
 		};
 
@@ -57,7 +59,7 @@ module.exports = React.createClass({
 		}
 
 		if (this.state.matched.length == 20) {
-			alert('you win');
+			alert('You Win!!!');
 		}
 
 	},
@@ -93,7 +95,7 @@ module.exports = React.createClass({
 		}
 
 		if (this.state.matched.length == 20) {
-			alert('you win');
+			alert('You Win!!!');
 		}
 	},
 
@@ -139,9 +141,8 @@ module.exports = React.createClass({
 
 	renderCoachList: function(){
 		var coachGrid = [];
-		shuffTeams = _.shuffle(this.props.teams)
-		for (var key in shuffTeams) {
-			var teamCoach = shuffTeams[key];
+		for (var key in this.state.shuffCoaches) {
+			var teamCoach = this.state.shuffCoaches[key];
 			teamCoach.key = key;
 
 			coachGrid.push(
@@ -163,9 +164,8 @@ module.exports = React.createClass({
 	renderTeamList: function(){
 
 		var teamGrid = [];
-		shuffTeams = _.shuffle(this.props.teams)
-		for (var key in shuffTeams) {
-			var team = shuffTeams[key];
+		for (var key in this.state.shuffTeams) {
+			var team = this.state.shuffTeams[key];
 			team.key = key;
 
 			teamGrid.push(
