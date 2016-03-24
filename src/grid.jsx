@@ -4,18 +4,10 @@ var ColorThumbnail = require('./colorThumbnail.jsx');
 var Updates = require('./updates.jsx');
 var Counter = require('./counter.jsx');
 
+
 module.exports = React.createClass({
 	
-	shuffleArray: function (array) {
-	    for (var i = array.length - 1; i > 0; i--) {
-	        var j = Math.floor(Math.random() * (i + 1));
-	        var temp = array[i];
-	        array[i] = array[j];
-	        array[j] = temp;
-	    }
-	    return array;
-	},
-
+	
 	getInitialState: function(){
 		return {
 			win: false,
@@ -90,6 +82,7 @@ module.exports = React.createClass({
 				labelTwo: '✓',
 				team: null
 			})
+			alert(this.props.teams.shuffleArray())
 			console.log('match')
 		} else {
 			console.log('no-match')
@@ -146,9 +139,9 @@ module.exports = React.createClass({
 
 	renderCoachList: function(){
 		var coachGrid = [];
-
-		for (var key in this.props.teams) {
-			var teamCoach = this.props.teams[key];
+		shuffTeams = _.shuffle(this.props.teams)
+		for (var key in shuffTeams) {
+			var teamCoach = shuffTeams[key];
 			teamCoach.key = key;
 
 			coachGrid.push(
@@ -170,9 +163,9 @@ module.exports = React.createClass({
 	renderTeamList: function(){
 
 		var teamGrid = [];
-
-		for (var key in this.props.teams) {
-			var team = this.props.teams[key];
+		shuffTeams = _.shuffle(this.props.teams)
+		for (var key in shuffTeams) {
+			var team = shuffTeams[key];
 			team.key = key;
 
 			teamGrid.push(
