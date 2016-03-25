@@ -1,49 +1,32 @@
-/* line 1, sass/style.scss */
 body {
-  background: #0C0043;
-}
+  background: #0C0043; }
 
-/* line 5, sass/style.scss */
 .center-block {
-  border-radius: 2%;
-}
+  border-radius: 2%; }
 
-/* line 10, sass/style.scss */
 .center-block img {
   border-radius: 30px;
   background: #fff;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
-/* line 17, sass/style.scss */
 .progress-bar {
-  background-color: #00FF87;
-}
+  background-color: #00FF87; }
 
-/* line 21, sass/style.scss */
 .label {
   width: 20%;
   margin: 0 auto;
-  padding: 7px;
-}
+  padding: 7px; }
 
-/* line 27, sass/style.scss */
 .btn-primary {
   background-color: #FF015B;
-  border-color: #FF015B;
-}
+  border-color: #FF015B; }
 
-/* line 32, sass/style.scss */
 .label-danger {
-  background-color: #FF015B;
-}
+  background-color: #FF015B; }
 
-/* line 36, sass/style.scss */
 .label-success {
-  background-color: #00FF87;
-}
+  background-color: #00FF87; }
 
-/* line 40, sass/style.scss */
 .logo {
   background: url("./imgs/logo.png");
   background-size: contain;
@@ -51,115 +34,80 @@ body {
   height: 300px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-position-x: center;
-}
+  background-position-x: center; }
 
-/* line 50, sass/style.scss */
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open > .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #FF015B;
-  border-color: #FF015B;
-}
+  border-color: #FF015B; }
 
-/* line 56, sass/style.scss */
 .header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 300px;
-}
+  height: 300px; }
 
-/* line 63, sass/style.scss */
 h5 {
-  color: #f0ad4e;
-}
+  color: #f0ad4e; }
 
-/* line 67, sass/style.scss */
 .progress p {
-  color: #337ab7;
-}
+  color: #337ab7; }
 
-/* line 71, sass/style.scss */
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
   padding-left: 0px;
-  padding-right: 0px;
-}
+  padding-right: 0px; }
 
-/* line 76, sass/style.scss */
 .thumb {
   height: 106.5px;
   width: 106.5px;
   margin: 5px;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
-/* line 87, sass/style.scss */
 a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
   background-color: #D6D4D4 !important;
-  border-color: #fff !important;
-}
+  border-color: #fff !important; }
 
-/* line 92, sass/style.scss */
 .card-container {
   perspective: 800px;
   position: relative;
   height: 106.5px;
   width: 106.5px;
   margin: 5px;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
-/* line 101, sass/style.scss */
 .card {
   width: 100%;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 1s;
-}
+  transition: transform 1s; }
 
-/* line 109, sass/style.scss */
 .card a {
   margin: 0;
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-}
+  backface-visibility: hidden; }
 
-/* line 119, sass/style.scss */
 .btn {
   width: 50%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
-/* line 124, sass/style.scss */
 .card .back {
-  transform: rotateY(180deg);
-}
+  transform: rotateY(180deg); }
 
-/* line 128, sass/style.scss */
 .flipped {
-  transform: rotateY(180deg);
-}
+  transform: rotateY(180deg); }
 
-/* line 132, sass/style.scss */
 .chosen {
-  box-shadow: 0 0 50px #ffd700,0 0 150px #ffd700 !important;
-}
+  box-shadow: 0 0 50px #ffd700,0 0 150px #ffd700 !important; }
 
-/* line 136, sass/style.scss */
 .matched {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
-/* line 140, sass/style.scss */
 .center-block {
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 148, sass/style.scss */
 a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
-  border-color: #0C0043 !important;
-}
+  border-color: #0C0043 !important; }
